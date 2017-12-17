@@ -1,0 +1,8 @@
+create or replace PROCEDURE TRANSFER(p_sender IN NUMBER, p_receiver IN NUMBER, p_amount IN NUMBER)
+IS
+BEGIN
+UPDATE ACCOUNT SET BALANCE = BALANCE - p_amount 
+WHERE ACC_NO = p_sender;
+UPDATE ACCOUNT SET BALANCE = BALANCE + p_amount
+WHERE ACC_NO = p_receiver;
+END;

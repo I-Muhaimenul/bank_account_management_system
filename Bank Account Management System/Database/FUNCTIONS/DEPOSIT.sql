@@ -1,0 +1,14 @@
+---DEPOSIT FUNCTION
+---TO DEPOSIT MONEY AND RETRIEVE THE CURRENT ACCOUNT BALANCE
+
+create or replace FUNCTION DEPOSIT(p_number NUMBER,p_amount NUMBER)
+RETURN NUMBER
+IS
+amount number;
+BEGIN
+SELECT BALANCE INTO amount FROM ACCOUNT
+WHERE ACC_NO = p_number;
+amount := amount + p_amount;
+UPDATE ACCOUNT SET BALANCE := amount WHERE ACC_NO = p_number;
+RETURN amount;
+END;

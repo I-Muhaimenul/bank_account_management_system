@@ -1,0 +1,17 @@
+---ACCOUNT EXIST FUNCTION
+--- TO CHECK IF AN ACCOUNT EXIST OR NOT
+
+create or replace FUNCTION ACCOUNTEXIST (p_number NUMBER)
+RETURN NUMBER
+IS
+flag ACCOUNT%ROWTYPE;
+temp NUMBER;
+BEGIN
+SELECT * INTO flag
+FROM ACCOUNT
+WHERE acc_no = p_number;
+IF (sql%found) THEN temp := 1;
+ELSE temp := 0;
+END IF;
+RETURN temp;
+END;
