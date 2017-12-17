@@ -1,0 +1,2 @@
+# bank_account_management_system
+ Prime purposes of our project are - to create a personal bank account, to manage that account - which may involve deposit, withdrawal, transfer, balance etc. and also to build up a connection between user and his account. Features of the project can be categorized into 3 types - Admin Panel, User Panel &amp; Master Admin.  The account that requires to be created to give the project fulfillment should comprise of some facts and information.
