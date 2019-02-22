@@ -6,10 +6,10 @@ Some features of this project are,
  - Admin can manage employee profile and overall system's settings
  - Employees can manage their own profile, User's bank Account, Money Deposit & withdrawal, user's transactions etc.
  - Users can manage their personal profile and
- - User can use their bank account for various purposes, which may involve money transfer, balance check, transaction list etc.
+ - Can use their bank account for various purposes, which may involve money transfer, balance check, transaction list etc.
  - A remote two factor Hach checking system for user before making any transaction
 
-##Techonology Stack:
+## Techonology Stack:
  - Developed in JAVA SE, Various JAVA GUI components, OJDBC etc.
  - Database: Oracle 10g (PL/SQL)
  - Tools: Netbeans, SQL Server etc. 
